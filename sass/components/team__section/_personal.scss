@@ -1,0 +1,35 @@
+.personal {
+  padding: 0;
+  display: flex;
+  text-align: center;
+}
+
+.personal .personal__item {
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.personal .personal__item + .personal__item {
+  margin-left: 30px;
+}
+
+.personal__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.personal-content {
+  padding: 30px 32px;
+}
+
+.personal-content__item {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+}

@@ -1,0 +1,58 @@
+.form-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-subscription__input {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $primary-white-color;
+  background-color: $background-color;
+}
+
+.footer-subscription__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button__form {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 28px 10px 29px;
+  min-width: 200px;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button.button__form:hover,
+.button.button__form:focus {
+  background-color: #188ce8;
+}
+
+.button-icon {
+  fill: $primary-white-color;
+}

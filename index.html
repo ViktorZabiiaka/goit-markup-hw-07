@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!--Шапка-->
@@ -46,10 +46,10 @@
                     <form class="form form__modal">
                         <p class="form__item">Оставьте свои данные, мы вам перезвоним</p>
 
-                        <label class="form__field">
-                            <span class="form__label">Имя</span>
-                            <input class="form__input" type="text" name="name">
-                            <svg class="form__icon" width="18" height="18"><use href="./images/icons.svg#icon-person-black"></use></svg>
+                        <label class="form form__field">
+                            <span class="form form__label">Имя</span>
+                            <input class="form form__input" type="text" name="name">
+                            <svg class="form form__icon" width="18" height="18"><use href="./images/icons.svg#icon-person-black"></use></svg>
                         </label>
 
                         <label class="form__field">
@@ -77,7 +77,7 @@
                             <span class="check__label">Соглашаюсь с рассылкой и принимаю <a href="#" class="check__link">Условия договора</a></span>
                         </label>
                         
-                        <button type="submit" class="form__button">Отправить</button>
+                        <button type="submit" class="button form__button">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -290,7 +290,7 @@
                 <form class="footer-subscription">
                     <label class="subscription">
                         <p class="form-title">Подпишитесь на рассылку</p>
-                        <input type="email" name="mail" id="mail" placeholder="E-mail" />
+                        <input class="footer-subscription__input" type="email" name="mail" id="mail" placeholder="E-mail" />
                     </label>
 
                     <button type="submit" class="button button__form">Подписаться<svg class="button-icon" width="24" height="24">
