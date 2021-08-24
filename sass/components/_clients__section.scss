@@ -33,6 +33,16 @@
 
   border: 1px solid $color-icons;
   border-radius: 4px;
+  
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+  
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: $accent-color;
+  }
 }
 
 .clients__icon {
@@ -41,14 +51,4 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   fill: $color-icons;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border-color: $accent-color;
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: $accent-color;
 }

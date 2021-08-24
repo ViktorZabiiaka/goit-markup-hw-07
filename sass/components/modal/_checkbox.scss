@@ -23,6 +23,10 @@
   border: 2px solid $primary-color;
   border-radius: 3px;
   background-color: $primary-white-color;
+  
+  &:hover {
+    border-color: $accent-color;
+  }
 }
 
 .check__icon {
@@ -40,10 +44,6 @@
   background-color: $accent-color;
 
   opacity: 1;
-}
-
-.check__box:hover {
-  border-color: $accent-color;
 }
 
 .check__link {

@@ -12,9 +12,9 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: $accent-color;
-}
-
-.button.button__hero:hover,
-.button.button__hero:focus {
-  background-color: #188ce8;
+  
+  &.button:hover,
+  &.button:focus {
+    background-color: #188ce8;
+  }
 }

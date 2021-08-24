@@ -46,12 +46,13 @@
   color: $primary-white-color;
   background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
-.button.button__form:hover,
-.button.button__form:focus {
-  background-color: #188ce8;
-}
 
 .button-icon {
   fill: $primary-white-color;
