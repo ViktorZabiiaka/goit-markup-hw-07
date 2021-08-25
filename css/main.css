@@ -98,8 +98,8 @@ header {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
 }
 
@@ -131,16 +131,20 @@ header {
 }
 
 .navigation__link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #212121;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .navigation__link:hover, .navigation__link:focus {
@@ -179,8 +183,12 @@ header {
 }
 
 .contacts__adress {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,11 +197,11 @@ header {
           align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #757575;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .contacts__adress:hover, .contacts__adress:focus {
@@ -206,8 +214,12 @@ header {
 }
 
 .contacts__icon {
-  -webkit-transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #757575;
   margin-right: 10px;
 }
@@ -235,8 +247,8 @@ header {
 .hero__title {
   margin: 0 auto 30px auto;
   max-width: 696px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
@@ -249,8 +261,8 @@ header {
   min-width: 200px;
   text-align: center;
   color: #ffffff;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: #2196f3;
@@ -262,8 +274,12 @@ header {
 
 .backdrop {
   position: fixed;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 100%;
   top: 0;
@@ -473,8 +489,12 @@ textarea {
 }
 
 .check__box {
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -487,8 +507,10 @@ textarea {
 }
 
 .check__icon {
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
   position: absolute;
   top: 4px;
@@ -506,9 +528,9 @@ textarea {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  color: #2196f3;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #2196f3;
 }
 
 .check__input {
@@ -993,7 +1015,6 @@ textarea {
 .location {
   margin-top: 0;
   margin-bottom: 9px;
-  color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -1013,9 +1034,12 @@ textarea {
 }
 
 .contacts-list.footer {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -1032,14 +1056,14 @@ textarea {
 }
 
 .footer-social__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
   margin-top: 0;
   margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .footer-social__networks {
@@ -1109,8 +1133,12 @@ textarea {
 }
 
 .button__form {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1125,8 +1153,8 @@ textarea {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;

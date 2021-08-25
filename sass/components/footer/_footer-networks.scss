@@ -6,14 +6,11 @@
 }
 
 .footer-social__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $primary-white-color;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @include font(null, 14px, 700, 1.14, .03em, $primary-white-color);
 }
 
 .footer-social__networks {

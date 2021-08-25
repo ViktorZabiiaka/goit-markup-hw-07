@@ -5,9 +5,7 @@
 }
 
 .footer__conteiner {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include flex(flex, baseline, space-between, null, null);
 }
 
 .conteiner-footer {
@@ -29,9 +27,7 @@
 .location {
   margin-top: 0;
   margin-bottom: 9px;
-  color: $primary-white-color;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, null, 1.71, null, null);
 }
 
 .footer-list {
@@ -49,12 +45,8 @@
 }
 
 .contacts-list.footer {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-
+  @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include font(null, 14px, null, 1.71, null, null);
   &:hover,
   &:focus {
     color: $accent-color;
