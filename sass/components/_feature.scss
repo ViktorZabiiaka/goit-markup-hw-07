@@ -1,6 +1,5 @@
 .feature.list {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex(flex, null, null, null, wrap);
 }
 
 .feature.list .feature__list {
@@ -13,9 +12,8 @@
 }
 
 .features__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center, null, null);
+
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -27,14 +25,14 @@
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+
+  @include font(null, 14px, 700, 1.14, null, null);
+
 }
 
 .features__item {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71;
+  
+  @include font(null, 14px, null, 1.71, null, null);
 }

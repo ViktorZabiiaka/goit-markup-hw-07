@@ -7,10 +7,7 @@
   text-align: center;
   color: $primary-white-color;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(null, 16px, 700, 1.88, .06em, null);
   background-color: $accent-color;
   
   &.button:hover,

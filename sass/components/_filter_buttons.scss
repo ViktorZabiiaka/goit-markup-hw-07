@@ -1,6 +1,6 @@
 .filter-buttons {
-  display: flex;
-  justify-content: center;
+    @include flex(flex, null, center, null, null);
+
   padding: 0;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -16,15 +16,9 @@
 
 .button__secondary {
   padding: 6px 22px;
-  color: $primary-color;
+
+  @include font(inherit, 16px, 500, 1.63, .03em, $primary-color);
   background-color: $secondery-background-color;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-
-  font-family: inherit;
 }
 
 .button__primary {

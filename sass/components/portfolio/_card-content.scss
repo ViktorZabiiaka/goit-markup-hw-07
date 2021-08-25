@@ -8,14 +8,13 @@
 .card-content__title {
   margin: 0;
   margin-bottom: 4px;
-  color: $primary-color;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+
+  @include font(null, 18px, null, 2, .06em, $primary-color);
 }
 
 .card-content__text {
   margin: 0;
   font-size: 16px;
   line-height: 1.88;
+  @include font(null, 16px, null, 1.88, null, null);
 }

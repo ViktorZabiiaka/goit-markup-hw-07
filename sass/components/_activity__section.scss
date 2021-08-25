@@ -1,13 +1,14 @@
 .activity__section {
-  padding-top: 0;
+  @include sectionMixin(0, 94px);
+  
   z-index: 1;
 }
 
 .activity__title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+
+  @include font(null, 36px, null, 1.17, null,null);
   text-align: center;
 }
 
@@ -19,11 +20,9 @@
 .thumb {
   position: absolute;
 
-  display: flex;
+  @include flex(flex, center, center, null, null);
   left: 0;
   bottom: 0;
-  justify-content: center;
-  align-items: center;
   width: 370px;
   height: 70px;
 
@@ -33,12 +32,10 @@
 .activity-box__item {
   padding: 0;
   margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+
+  @include font(null, 14px, 700, 1.14, .03em, $primary-white-color);
+
   text-transform: uppercase;
-  color: $primary-white-color;
 }
 
 .activity.list {

@@ -1,7 +1,7 @@
 .team__section {
   background-color: $secondery-background-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include sectionMixin(94px, 94px);
+
 }
 
 .conteiner.team {
@@ -11,7 +11,7 @@
 .team__title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+
+  @include font(null, 36px, null, 1.17, null, null);
   text-align: center;
 }

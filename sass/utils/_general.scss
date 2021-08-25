@@ -5,10 +5,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+section {
+  @include sectionMixin(94px, 94px);
 }
+
 
 .conteiner {
   width: 1200px;
@@ -56,8 +56,8 @@ img {
 }
 
 .button {
-  transition: color, background-color,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  @include transition(color, background-color, box-shadow, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    
   cursor: pointer;
   border: none;
   border-radius: 4px;

@@ -3,8 +3,8 @@
 }
 
 .clients {
-  display: flex;
-  align-items: center;
+  @include flex(flex, center, null, null, null);
+
   padding: 0;
   margin: 0;
 }
@@ -16,18 +16,15 @@
 .clients__title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+
+  @include font(null, 36px, null, 1.17, .03em, null);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .clients__link {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center, null, null);
   width: 170px;
   height: 92px;
 
@@ -46,9 +43,7 @@
 }
 
 .clients__icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   fill: $color-icons;
 }

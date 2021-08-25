@@ -25,9 +25,7 @@
 .hero__title {
   margin: 0 auto 30px auto;
   max-width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+
+  @include font(null, 44px, 900, 1.36, .06em, null);
 }
 

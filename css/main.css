@@ -6,7 +6,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section {
+section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -57,10 +57,14 @@ img {
 }
 
 .button {
-  -webkit-transition: color, background-color, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color, background-color, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color, background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color, background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -305,10 +309,14 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 528px;
   height: 581px;
   padding: 40px;
@@ -322,12 +330,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -345,8 +353,12 @@ header {
 }
 
 .modal__icon {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__modal {
@@ -356,14 +368,14 @@ header {
 }
 
 .form__item {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .form__field {
@@ -436,16 +448,24 @@ header {
 
 .form__input,
 .form__field textarea {
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
 }
 
 .form__icon {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   bottom: 11px;
   left: 12px;
@@ -545,18 +565,22 @@ textarea {
 }
 
 .form__button {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 700;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  color: #ffffff;
   min-width: 200px;
   padding: 10px 55px 10px 56px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -590,13 +614,13 @@ textarea {
 
 .button__secondary {
   padding: 6px 22px;
-  color: #212121;
-  background-color: #f5f4fa;
-  font-weight: 500;
+  font-family: inherit;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  font-family: inherit;
+  color: #212121;
+  background-color: #f5f4fa;
 }
 
 .button__primary {
@@ -642,8 +666,8 @@ textarea {
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
 }
 
@@ -656,6 +680,7 @@ textarea {
 
 .activity__section {
   padding-top: 0;
+  padding-bottom: 94px;
   z-index: 1;
 }
 
@@ -677,14 +702,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 0;
-  bottom: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  bottom: 0;
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -693,12 +718,12 @@ textarea {
 .activity-box__item {
   padding: 0;
   margin: 0;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .activity.list {
@@ -755,8 +780,8 @@ textarea {
 .personal__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
 }
 
@@ -784,17 +809,21 @@ textarea {
 }
 
 .networks__link {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -810,8 +839,12 @@ textarea {
 }
 
 .networks__icons {
-  -webkit-transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill, background-color;
+  transition-property: fill, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
 }
 
@@ -828,10 +861,14 @@ textarea {
 }
 
 .portfolio__link {
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 }
 
@@ -902,14 +939,16 @@ textarea {
 .card-content__title {
   margin: 0;
   margin-bottom: 4px;
-  color: #212121;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .card-content__text {
   margin: 0;
+  font-size: 16px;
+  line-height: 1.88;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -938,13 +977,17 @@ textarea {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .clients__link {
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1042,6 +1085,7 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
   line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contacts-list.footer:hover, .contacts-list.footer:focus {

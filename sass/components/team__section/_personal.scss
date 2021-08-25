@@ -18,9 +18,8 @@
 .personal__title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font(null, 16px, 500, 1.19, null, null,);
 }
 
 .personal-content {
@@ -30,6 +29,6 @@
 .personal-content__item {
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font(null, 16px, null, 1.19, null, null);
 }
