@@ -10,7 +10,6 @@
 
 .conteiner-footer {
   margin-right: 70px;
-  width: 226px;
 }
 
 .address {
@@ -27,7 +26,7 @@
 .location {
   margin-top: 0;
   margin-bottom: 9px;
-  @include font(null, 14px, null, 1.71, null, null);
+  @include font(null, 14px, null, 1.71, null, $primary-white-color);
 }
 
 .footer-list {
