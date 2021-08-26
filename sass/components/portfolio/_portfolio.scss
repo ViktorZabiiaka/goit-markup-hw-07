@@ -18,7 +18,8 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
-  &:hover .overlay__text {
+  &:hover .overlay__text,
+  &:focus .overlay__text {
     transform: translateY(0);
     opacity: 1;
   }
